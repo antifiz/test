@@ -1,0 +1,33 @@
+logging:
+  file:
+    name: ${logging.file.path}/gitlab-telegram-integration.log
+    path: logs
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        engine:
+          internal:
+            StatisticalLoggingSessionEventListener: WARN
+        type: trace
+    ru:
+      hostco:
+        dvs:
+          mpi:
+            '*': DEBUG
+  pattern:
+    file: '"%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"'
+server:
+  port: 9001
+
+spring:
+  application:
+    name: gitlab-telegram-integration
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: myservice1
+    url: jdbc:postgresql://localhost/mydatabase1
+    username: myservice1
+
+app:
+  gitlabPrivateToken: EeFDLNuqEsCZDkxd61uF
