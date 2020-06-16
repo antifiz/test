@@ -1,4 +1,4 @@
-package ru.hostco.dvs.gitlabtelegramintegration.dto;
+package ru.hostco.dvs.gitlabtelegramintegration.dto.gitlab;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;

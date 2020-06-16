@@ -1,7 +1,6 @@
 package ru.hostco.dvs.gitlabtelegramintegration.service;
 
 import java.util.Collection;
-import java.util.List;
 import lombok.NonNull;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import ru.hostco.dvs.gitlabtelegramintegration.dto.GitLabUser;
-import ru.hostco.dvs.gitlabtelegramintegration.dto.MergeRequestInfo;
+import ru.hostco.dvs.gitlabtelegramintegration.dto.gitlab.GitLabUser;
+import ru.hostco.dvs.gitlabtelegramintegration.dto.gitlab.MergeRequestInfo;
 
 @FeignClient(value = "gitlab-api", url = "https://git.hostco.ru")
 public interface GitLabClient {

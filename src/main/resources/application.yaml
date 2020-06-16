@@ -30,4 +30,5 @@ spring:
     username: myservice1
 
 app:
-  gitlabPrivateToken: EeFDLNuqEsCZDkxd61uF
+  gitlabPrivateToken: 'dcznid6dTn4vNFGzjq6P'
+  telegramBotToken: '1074569969:AAFXseeh7Ypp0KOGPX7tZv_FIZaj3h5WhmY'
